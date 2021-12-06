@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Administrar Usuarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/AdminUsuarios.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+
+    <div class="container">
+        <div class="mx-auto col-sm-16 main-section" id="myTab" role="tablist">
+
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h4>Usuarios</h4>
+                            <div>
+                                <button type="button" style="float: right" onclick=openFormAdd() id="save">Agregar Usuario</button></div>
+
+                            <form action="menu.html">
+                                <input type="submit" value="Menu de Opciones" style="float: center" button style="margin: 20px" />
+                            </form>
+                        </div>
+
+
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="cloneList" class="table table-bordered table-hover table-striped table-dark ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Identificación</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Dirección</th>
+                                            <th scope="col">Celular</th>
+                                            <th scope="col">Mail</th>
+                                            <th scope="col">Contraseña</th>
+                                            <th scope="col">Zona</th>
+                                            <th scope="col">Tipo</th>
+                                            <th scope="col">Acción</th>
+                                            <th scope="col">Borrar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cloneList tbody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-popup-bg">
+            <div class="form-container">
+                <button id="btnCloseForm" class="close-button">X</button>
+                <form>
+                    <!-- action=""-->
+                    <h3>Actualizar Usuario</h3>
+                    <form>
+                        <input class="form-group" id="identificacion-usr" type="text" placeholder="Identificación" required>
+                        <input class="form-group" id="nombre-usr" type="text" placeholder="Nombre" required>
+                        <input class="form-group" id="direccion-usr" type="text" placeholder="Dirección" required>
+                        <input class="form-group" id="celular-usr" type="text" placeholder="Celular" required>
+                        <input class="form-group" id="email-usr" type="text" placeholder="Email" required>
+                        <input class="form-group" id="contrasena-usr" type="text" placeholder="Contraseña" required>
+                        <input class="form-group" id="zona-usr" type="text" placeholder="Zona" required>
+                        <input class="form-group" id="tipo-usr" type="text" placeholder="Tipo" required>
+                        <div id="id_usr" value=""></div>
+                        <button id="btn_post_update">Guardar</button>
+                    </form>
+            </div>
+        </div>
+
+        <div class="form1-popup-bg">
+            <div class="form-container">
+                <button id="btnCloseForm" class="close-button">X</button>
+                <form>
+                    <!-- action=""-->
+                    <h3>Agregar Usuario</h3>
+                    <form>
+                        <input class="form-group" id="id1-usr" type="number" placeholder="Id" required>
+                        <input class="form-group" id="identificacion1-usr" type="text" placeholder="Identificación" required>
+                        <input class="form-group" id="nombre1-usr" type="text" placeholder="Nombre" required>
+                        <input class="form-group" id="direccion1-usr" type="text" placeholder="Dirección" required>
+                        <input class="form-group" id="celular1-usr" type="text" placeholder="Celular" required>
+                        <input class="form-group" id="email1-usr" type="text" placeholder="Email" required>
+                        <input class="form-group" id="contrasena1-usr" type="text" placeholder="Contraseña" required>
+                        <input class="form-group" id="zona1-usr" type="text" placeholder="Zona" required>
+                        <input class="form-group" id="tipo1-usr" type="text" placeholder="Tipo" required>
+                        <div id="id_usr" value=""></div>
+                        <button id="btn_save_user">Guardar</button>
+                    </form>
+            </div>
+        </div>
+        <!-- partial -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/AdminUsuarios.js"></script>
+</body>
+
+</html>

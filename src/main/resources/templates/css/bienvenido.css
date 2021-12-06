@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/** CONTAINER **/
+.container{
+    z-index: 1;
+}
+.header{
+    z-index: 2;
+}
+
+.container-all{    
+    width: 100%;
+    height:100%;
+    position: fixed;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50.1%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms ease;
+    padding: 30px;
+}
+
+.active {
+    background-color: rgba(0,0,0,0.6);
+    visibility: visible;
+    opacity: 1;
+}
+
+.active .popup{
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+/** POPUP **/
+.popup{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+    display: flex;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    background: #B0E0E6;
+    padding: 30px;
+    padding-right: 0px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.6);
+    transition: all 600ms ease;
+    visibility: hidden;
+
+}
+.contenedor-popup h3{    
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contenedor-popup{
+    padding-left: 17px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+a.btn-submit{
+    position: relative;
+    top: 10px;
+}
+
+.btn-exit-popup {
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 12px 19px;
+    border-radius: 50%;
+}
+#usuario{
+    color: #000080;
+}
+
